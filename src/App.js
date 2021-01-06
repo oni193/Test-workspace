@@ -1,8 +1,9 @@
 import React from 'react';
+import Box from './components/recruit/RecruitBox';
 
 function App() {
   return (
-   <div>dtd</div>
+    <Box/>
   );
 }
 
