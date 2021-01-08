@@ -1,5 +1,5 @@
 import React from 'react';
-import Box from './components/recruit/RecruitBox';
+import Box from './Box';
 
 function App() {
   return (
