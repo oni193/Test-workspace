@@ -1,16 +1,17 @@
 import { useState } from 'react';
 
-const useModal = () => {
-  const [isShowing, setIsShowing] = useState(false);
+interface IUseModal {
+  isShown: boolean;
+  toggle: () => void;
+}
 
-  function toggle() {
-    setIsShowing(!isShowing);
-  }
-
+const useModal = (): IUseModal => {
+  const [isShown, setIsShown] = useState<boolean>(false);
+  const toggle = (): void => setIsShown(!isShown);
   return {
-    isShowing,
+    isShown,
     toggle,
-  }
+  };
 };
 
 export default useModal;
