@@ -1,0 +1,40 @@
+ <div className="nav">
+            <ul className="menu">
+                <li className="menu-item" onClick={() => setPage("about")}>About</li>
+                <li className="menu-item" onClick={() => setPage("projects")}>Projects</li>
+                <li className="menu-item" onClick={() => setPage("contact")}>Contact</li>
+
+	=
+{
+                  menuItems.map((item,i)=>
+                    <li key={i} onClick={()=>setComponent(item.component)} className="menu-item">
+                      {item.title}
+                    </li>
+                  )
+                }
+            </ul>
+        </div>
+        <div className="container">
+            {component}
+        </div>
+
+
+
+
+        var button = document.getElementById('button');
+
+button.onclick = function() {
+  var div = document.getElementById('newpost');
+  if (div.style.display !== 'none') {
+    div.style.display = 'none';
+  } else {
+    div.style.display = 'block';
+  }
+};
+
+const 
+
+<div id="newpost">
+    Test text
+</div>
+<button id='button'>Click</button>
