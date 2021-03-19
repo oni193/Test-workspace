@@ -23,10 +23,6 @@ const Partner = () => {
             tab: '협력사',
             content: '협력1'
         },
-        {
-            tab: '계열사',
-            content: '계열1'
-        }  
     ];
 
     const useTabs =(initialTabs, allTabs) => {

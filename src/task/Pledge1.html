@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Reset.css">
+  <link rel="stylesheet" href="Pledge1.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <p>간병인 서약서</p>
+    </div>
+    <div class="notice">
+      간병인님이 제공해주신 소중한 개인정보는 고객님의 서비스 제공과 리워드, 만족도에 대한 피드백 등의 서비스 운영자료로만 사용됩니다.
+      서비스 이용에 대하여 관계 법령(개인정보보법 제15조, 제21조, 제22조, 제23조, 제24조, 제34조와 신용정보의 이용 및 보호에 관한 법륩)에 따라
+      서비스 제공 후 자동 폐기됨을 알려드립니다.
+    </div>
+    <div class="notice">
+      &block; AAI 헬스케어에서 요청한 간병인 서비스에 대해 아래와 같은 사항을 서약합니다
+    </div>
+    <form>
+      <div class="agreement">
+        <p>개인정보 수집 및 이용에 동의하십니까?</p>
+        <input type="radio" name="agreement" value="agree">동의합니다
+        <input type="radio" name="agreement" value="disagree" checked>동의하지 않습니다</input>
+      </div>
+      <div class="informations">
+        <div class="inform">
+          <label for="name">간병인 성명</label>
+          <input type="text" id="name" name="name" >
+        </div>
+        <div class="inform">
+          <label for="birth">생년월일</label>
+          <input type="text" id="birth" name="birth" >
+        </div>
+        <div class="inform">
+          <label for="nationality">국적</label>
+          <select name="nationality" id="nationality">
+            <option value="local">내국인</option>
+            <option value="foregin">외국인</option>
+          </select>
+        </div>
+        <div class="inform">
+          <label for="phone">핸드폰 번호</label>
+          <input type="text" id="phone" name="phone" >
+        </div>
+      </div>
+      <button class="footerButton">
+        서약서 제출
+      </button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Reset.css">
+  <link rel="stylesheet" href="Pledge2.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <div class="header">
+        <p>간병인 서약서</p>
+      </div>
+      <div class="result">
+        <p>간병인 서약서 제출이 완료 되었습니다.</p>
+      </div>
+      <div class="informations">
+        <div class="inform">
+          <label for="name">간병인 성명</label>
+          <input type="text" id="name" name="name" >
+        </div>
+        <div class="inform">
+          <label for="birth">생년월일</label>
+          <input type="text" id="birth" name="birth" >
+        </div>
+        <div class="inform">
+          <label for="nationality">국적</label>
+          <select name="nationality" id="nationality">
+            <option value="local">내국인</option>
+            <option value="foregin">외국인</option>
+          </select>
+        </div>
+        <div class="inform">
+          <label for="phone">핸드폰 번호</label>
+          <input type="text" id="phone" name="phone" >
+        </div>
+      </div>
+      <div class="notice">
+      간병인 배정 정보는 소속 업체 담당자에게 파견<br/>
+      정보를 확인해주시기 바랍니다.<br/>
+      <br/>
+      [업체 정보]<br/>
+      소속업체 : YMCA<br/>
+      담당자명 : 나파견<br/>
+      담당자 연락처 : 02-21121-12121<br/>
+      <br/>
+      [간병인 요청 정보]<br/>
+      고객 간병 요청일 : 2021-02-02<br/>
+      요청 시간 : 24시간<br/>
+      <br/>
+      &block; 삼성생명 S-헬스케어 고객 센터<br/>
+      &phone; 02-3449-3539<br/>
+      </div>
+      <button class="footerButton">
+        서약서 제출
+      </button>
+    </form>
+  </div>
+</body>
+</html>

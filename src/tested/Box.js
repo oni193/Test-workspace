@@ -5,7 +5,7 @@ const Box = () => {
   const [showing, setShowing] = useState('none');
   // const showing = useState('none'); 
   // const setShowing = useState('none');
-  const [describe, setDescribe] = useState();
+
   
 
   return(
@@ -13,16 +13,9 @@ const Box = () => {
       <ClickBox onClick={()=>setShowing('inline-block')}>
         ClickBox
       </ClickBox>
-      <ClickBox onClick={()=>setShowing('inline-block')}>
-        ClickBox
-      </ClickBox>
-      <ClickBox onClick={()=>setShowing('inline-block')}>
-        ClickBox
-      </ClickBox>
 
 
       <SampleBox showing={showing}>
-        <div>{props=>props.describe}</div>
         <div onClick={()=>setShowing('none')}>X</div>
       </SampleBox>
 
